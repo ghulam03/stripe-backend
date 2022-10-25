@@ -1,7 +1,7 @@
 const cors = require("cors");
 const express = require("express");
 
-const stripe = require("stripe")("LEARNCODEONLINE");
+const stripe = require("stripe")(process.env.stripeKey);
 const uuid = require("uuid/v4");
 
 const app = express();
